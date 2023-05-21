@@ -6,6 +6,8 @@ Public Class Form1
             Call Connect_to_DB()
             Dim mycmd As New MySqlCommand
             Dim myreader As MySqlDataReader
+
+            Dim strSQL As String
             strSQL = "Select * from users where username = '" _
                 & .usernametxt.Text & "' and password = ('" _
                 & .passwordtxt.Text & "')"
